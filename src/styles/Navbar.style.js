@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 //Contenant general de la barre de navigation
 export const NavbarContainer = styled.nav`
     width: 100%;
-    height: 100px;
+    height: ${(props) => (props.extendNavbar ? "100vh" : "100px")};
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,15 @@ export const RightNavContainer = styled.div`
 `;
 
 //Contenant extra pour responsivite
-export const NavbarExtendedContainer = styled.div``;
+export const NavbarExtendedContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 700px){
+        display: none;
+    }
+`;
 
 //Contenant pour le wrapper de la partie gauche et droite
 export const NavbarInnerContainer = styled.div`
@@ -48,6 +56,26 @@ export const NavbarLink = styled(Link)`
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin: 30px;
+
+    :hover{
+        color: blueviolet;
+    }
+
+    @media (max-width: 700px){
+        display: none;
+    }
+`;
+
+export const NavbarLinkExtended = styled(Link)`
+    color: white;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 30px;
+
+    :hover{
+        color: blueviolet;
+    }
 `;
 
 export const Logo = styled.img`
@@ -56,3 +84,17 @@ export const Logo = styled.img`
     height: auto;
 `;
 
+
+export const OpenLinksButton = styled.button`
+    width: 60px;
+    height: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+
+    @media(min-width: 700px){
+        display: none;
+    }
+`;
