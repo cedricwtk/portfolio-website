@@ -7,6 +7,8 @@ export const NavbarContainer = styled.nav`
     background-color: black;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    z-index: 1;
 `;
 
 //Contenant representant la partie gauche de la barre de navigation
@@ -80,7 +82,7 @@ export const NavbarLinkExtended = styled(Link)`
 
 export const Logo = styled.img`
     margin-top: 30px;
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
 `;
 

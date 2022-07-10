@@ -14,7 +14,7 @@ function Navbar() {
                 <RightNavContainer>
                     <NavbarLinkContainer>
                         <NavbarLink to="/">Home</NavbarLink>
-                        <NavbarLink to="/">Portfolio</NavbarLink>
+                        <NavbarLink to="/portfolio">Portfolio</NavbarLink>
                         <NavbarLink to="/">Resume</NavbarLink>
                         <NavbarLink to="/">About</NavbarLink>
                         <NavbarLink to="/">Social</NavbarLink>
