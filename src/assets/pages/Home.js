@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { HeroContainer, HeroSlogan, HeroTextContainer, HeroVideoBackground, BodyContainer, TextDescriptionContainer, TextSizeLarge, CarrousselContainer } from "../../styles/Home.style";
 import Video from '../video/hero.mp4';
@@ -21,6 +22,7 @@ const Home = () => {
       </TextDescriptionContainer>
 
       </BodyContainer>
+      <Footer/>
       </>
     )
   };

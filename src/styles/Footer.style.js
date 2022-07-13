@@ -14,7 +14,22 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterSubContainer = styled.div`
-    width: 80%;
-    background-color: red;
+    margin: 2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+`;
+
+export const FooterColumn = styled.div`
+    width: 30%;
+    margin: 10px;
+    background-color: purple;
+`;
+
+export const TextSizeLarge = styled.h2`
+    color: white;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 `;
 
