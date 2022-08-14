@@ -26,15 +26,15 @@ function Navbar() {
                     </NavbarLinkContainer>
                 </RightNavContainer>
             </NavbarInnerContainer>
-            { extendNavbar && (
-            <NavbarExtendedContainer>
-                <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
-                <NavbarLinkExtended to="/">Portfolio</NavbarLinkExtended>
-                <NavbarLinkExtended to="/">Resume</NavbarLinkExtended>
-                <NavbarLinkExtended to="/">About</NavbarLinkExtended>
-                <NavbarLinkExtended to="/">Social</NavbarLinkExtended>
-            </NavbarExtendedContainer>
-)}
+            {extendNavbar && (
+                <NavbarExtendedContainer>
+                    <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
+                    <NavbarLinkExtended to="/">Portfolio</NavbarLinkExtended>
+                    <NavbarLinkExtended to="/">Resume</NavbarLinkExtended>
+                    <NavbarLinkExtended to="/">About</NavbarLinkExtended>
+                    <NavbarLinkExtended to="/">Social</NavbarLinkExtended>
+                </NavbarExtendedContainer>
+            )}
         </NavbarContainer>
     );
 }

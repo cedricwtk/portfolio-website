@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
 //Contenant general du footer
 export const FooterContainer = styled.div`
@@ -14,7 +13,6 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterSubContainer = styled.div`
-    margin: 2%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -23,7 +21,9 @@ export const FooterSubContainer = styled.div`
 export const FooterColumn = styled.div`
     width: 30%;
     margin: 10px;
-    background-color: purple;
+    display: grid;
+    justify-items: center;
+    text-align: center;
 `;
 
 export const TextSizeLarge = styled.h2`
@@ -33,3 +33,39 @@ export const TextSizeLarge = styled.h2`
     text-align: center;
 `;
 
+export const TextSizeSmall = styled.p`
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 60%;
+`;
+
+export const FooterLinkContainer = styled.div`
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+`;
+
+export const FooterLinkLine = styled.div`
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    height: 30px;
+`;
+
+export const FooterLink = styled.a`
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin-left: 18px;
+    :hover{
+        color: blueviolet;
+    }
+`;
