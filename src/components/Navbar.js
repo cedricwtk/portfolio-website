@@ -9,7 +9,9 @@ function Navbar() {
         <NavbarContainer extendNavbar={extendNavbar}>
             <NavbarInnerContainer>
                 <LeftNavContainer>
-                    <Logo src={LogoImg}></Logo>
+                    <NavbarLink to="/">
+                        <Logo src={LogoImg}></Logo>
+                    </NavbarLink>
                 </LeftNavContainer>
                 <RightNavContainer>
                     <NavbarLinkContainer>

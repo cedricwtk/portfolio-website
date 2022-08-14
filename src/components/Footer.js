@@ -8,6 +8,12 @@ function Footer() {
             <FooterSubContainer>
                 <FooterColumn>
                     <TextSizeLarge>Projects</TextSizeLarge>
+                    <FooterLinkContainer>
+                        <FooterLink href="https://github.com/cedricwtk/portfolio-website">My Personal Portfolio website</FooterLink>
+                        <FooterLink href="/">Discord Bot</FooterLink>
+                        <FooterLink href="/">DataEntry Script</FooterLink>
+                        <FooterLink href="/">API</FooterLink>
+                    </FooterLinkContainer>
                 </FooterColumn>
                 <FooterColumn>
                     <TextSizeLarge>Contact</TextSizeLarge>

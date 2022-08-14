@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //Contenant general de la barre de navigation
 export const NavbarContainer = styled.nav`
     width: 100%;
@@ -85,7 +85,6 @@ export const Logo = styled.img`
     max-width: 200px;
     height: auto;
 `;
-
 
 export const OpenLinksButton = styled.button`
     width: 60px;
