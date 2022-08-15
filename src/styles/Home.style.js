@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import img from '../assets/computer.jpg';
+import img from '../assets/description.jpg';
+import nobg from '../assets/me-no-bg.png';
+
 export const BodyContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -7,11 +9,44 @@ export const BodyContainer = styled.div`
     background-color: black;
 `;
 
+export const TextDescriptionDroite = styled.div`
+    height: 100%;
+    width: 30%;
+    background-image: url(${nobg});
+    background-size: cover;
+    margin-right: 200px;
+`;
+export const TexteDescriptionGauche = styled.div`
+`;
+
+export const TextDescriptionButton = styled.a`
+  color: white;
+  margin-left: 20vw;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.25em 1em;
+  border: 3px solid purple;
+  background-color: black;
+  border-radius: 3px;
+  text-decoration: none;
+
+  :hover{
+    color: purple;
+    background-color: white;
+    border: 4px solid palevioletred;
+  }
+
+`;
+
 export const TextDescriptionContainer = styled.div`
     background-image: url(${img});
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
+    display: flex;
+`;
+
+export const TextDescriptionBackground = styled.div`
 `;
 
 export const CarrousselContainer = styled.div`
