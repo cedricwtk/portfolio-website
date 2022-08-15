@@ -19,8 +19,8 @@ const Home = () => {
         </CarrousselContainer>
         <TextDescriptionContainer>
           <TextSizeLarge>This section will hold a short description about me</TextSizeLarge>
-        </TextDescriptionContainer>
 
+        </TextDescriptionContainer>
       </BodyContainer>
       <Footer />
     </>

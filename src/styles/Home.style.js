@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import video from '../assets/video/hero.mp4';
-
+import img from '../assets/computer.jpg';
 export const BodyContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -9,9 +8,10 @@ export const BodyContainer = styled.div`
 `;
 
 export const TextDescriptionContainer = styled.div`
+    background-image: url(${img});
+    background-size: cover;
     width: 100%;
     height: 40vh;
-    background-color: red;
 `;
 
 export const CarrousselContainer = styled.div`
@@ -28,15 +28,12 @@ export const TextSizeLarge = styled.h2`
     padding: 10%;
 `;
 
-
 export const HeroContainer = styled.div`
     width: 100%;
     height: 100vh;
-    background-image: url(${video});
     background-size: cover;
     display: flex;
 `;
-
 
 export const HeroVideoBackground = styled.video`
     width: 100%;
