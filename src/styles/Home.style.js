@@ -51,8 +51,10 @@ export const TextDescriptionBackground = styled.div`
 
 export const CarrousselContainer = styled.div`
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-color: blue;
+    display: block;
+    position: relative;
 `;
 
 export const TextSizeLarge = styled.h2`

@@ -3,6 +3,8 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { HeroContainer, HeroSlogan, TextDescriptionButton, HeroTextContainer, HeroVideoBackground, BodyContainer, TextDescriptionContainer, TexteDescriptionGauche, TextSizeLarge, CarrousselContainer, TextDescriptionDroite } from "../../styles/Home.style";
 import Video from '../video/hero.mp4';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
   return (
     <>
@@ -15,6 +17,23 @@ const Home = () => {
           </HeroTextContainer>
         </HeroContainer>
         <CarrousselContainer>
+          <Carousel>
+            <Carousel.Item interval={2000}>
+              <Carousel.Caption>
+                <h2>Slide 1</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+              <Carousel.Caption>
+                <h2>Slide 2</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+                <h2>Slide 3</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </CarrousselContainer>
         <TextDescriptionContainer>
           <TexteDescriptionGauche>
