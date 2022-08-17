@@ -1,12 +1,34 @@
 import styled from 'styled-components';
 import img from '../assets/description.jpg';
 import nobg from '../assets/me-no-bg.png';
+import Carousel from 'react-bootstrap/Carousel';
 
 export const BodyContainer = styled.div`
     width: 100%;
     height: 100%;
     margin: auto;
     background-color: black;
+`;
+
+
+export const Caroussel = styled(Carousel)`
+    height: 500px;
+`;
+
+export const CarousselImg = styled.img`
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+`;
+
+export const CarousselItem = styled(Carousel.Item)`
+    height: 500px;
+    width: 100%;
+`;
+
+export const CarousselCaption = styled(Carousel.Caption)`
+    bottom: 10rem;
+    font-size: x-large;
 `;
 
 export const TextDescriptionDroite = styled.div`
@@ -20,21 +42,21 @@ export const TexteDescriptionGauche = styled.div`
 `;
 
 export const TextDescriptionButton = styled.a`
-  color: white;
-  margin-left: 20vw;
-  font-size: 2em;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 0.25em 1em;
-  border: 3px solid purple;
-  background-color: black;
-  border-radius: 3px;
-  text-decoration: none;
+    color: white;
+    margin-left: 20vw;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.25em 1em;
+    border: 3px solid purple;
+    background-color: black;
+    border-radius: 3px;
+    text-decoration: none;
 
-  :hover{
-    color: purple;
-    background-color: white;
-    border: 4px solid palevioletred;
-  }
+    :hover{
+        color: purple;
+        background-color: white;
+        border: 4px solid palevioletred;
+    }
 
 `;
 
@@ -51,7 +73,7 @@ export const TextDescriptionBackground = styled.div`
 
 export const CarrousselContainer = styled.div`
     width: 100%;
-    height: 50vh;
+    height: 500px;
     background-color: blue;
     display: block;
     position: relative;

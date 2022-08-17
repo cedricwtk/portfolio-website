@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterSubContainer = styled.div`
+    margin-top: 30px;
     height: 100%;
     display: flex;
     justify-content: center;

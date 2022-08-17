@@ -1,9 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { HeroContainer, HeroSlogan, TextDescriptionButton, HeroTextContainer, HeroVideoBackground, BodyContainer, TextDescriptionContainer, TexteDescriptionGauche, TextSizeLarge, CarrousselContainer, TextDescriptionDroite } from "../../styles/Home.style";
+import { HeroContainer, Caroussel, CarousselImg, CarousselItem, CarousselCaption, HeroSlogan, TextDescriptionButton, HeroTextContainer, HeroVideoBackground, BodyContainer, TextDescriptionContainer, TexteDescriptionGauche, TextSizeLarge, CarrousselContainer, TextDescriptionDroite } from "../../styles/Home.style";
 import Video from '../video/hero.mp4';
-import Carousel from 'react-bootstrap/Carousel';
+import Image1 from '../team.jpg';
+import Image2 from '../vietnam.jpg';
+import Image3 from '../computer.jpg';
+import Image4 from '../learning.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
   return (
@@ -17,23 +20,36 @@ const Home = () => {
           </HeroTextContainer>
         </HeroContainer>
         <CarrousselContainer>
-          <Carousel>
-            <Carousel.Item interval={2000}>
-              <Carousel.Caption>
-                <h2>Slide 1</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-              <Carousel.Caption>
-                <h2>Slide 2</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-                <h2>Slide 3</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+          <Caroussel>
+            <CarousselItem>
+              <CarousselImg src={Image3} />
+              <CarousselCaption>
+                <h3>Software Developer</h3>
+                <p>I have 2 years of experience on the market</p>
+              </CarousselCaption>
+            </CarousselItem>
+            <CarousselItem interval={3000}>
+              <CarousselImg src={Image1} />
+              <CarousselCaption>
+                <h3>Team Player</h3>
+                <p>I have good interpersonal skills, I can work and get along with anyone</p>
+              </CarousselCaption>
+            </CarousselItem>
+            <CarousselItem interval={3000}>
+              <CarousselImg src={Image2} />
+              <CarousselCaption>
+                <h3>Critical Mind</h3>
+                <p>I observe, I think and I make changes if needed</p>
+              </CarousselCaption>
+            </CarousselItem>
+            <CarousselItem>
+              <CarousselImg src={Image4} />
+              <CarousselCaption>
+                <h3>Continuous Improvement</h3>
+                <p>Always studying new topics and honing my skills</p>
+              </CarousselCaption>
+            </CarousselItem>
+          </Caroussel>
         </CarrousselContainer>
         <TextDescriptionContainer>
           <TexteDescriptionGauche>
