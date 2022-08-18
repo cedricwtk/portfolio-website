@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import img from '../assets/description.jpg';
-import nobg from '../assets/me-no-bg.png';
+import img from '../assets/image/description.jpg';
+import nobg from '../assets/image/me-no-bg.png';
 import Carousel from 'react-bootstrap/Carousel';
 
 export const BodyContainer = styled.div`

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavbarContainer, LeftNavContainer, RightNavContainer, NavbarInnerContainer, NavbarExtendedContainer, NavbarLinkContainer, NavbarLink, Logo, OpenLinksButton, NavbarLinkExtended } from "../styles/Navbar.style";
-import LogoImg from "../assets/Logo.png"
+import LogoImg from "../assets/image/Logo.png"
 
 
 function Navbar() {
@@ -17,9 +17,9 @@ function Navbar() {
                     <NavbarLinkContainer>
                         <NavbarLink to="/">Home</NavbarLink>
                         <NavbarLink to="/portfolio">Portfolio</NavbarLink>
-                        <NavbarLink to="/">Resume</NavbarLink>
-                        <NavbarLink to="/">About</NavbarLink>
-                        <NavbarLink to="/">Social</NavbarLink>
+                        <NavbarLink to="/resume">Resume</NavbarLink>
+                        <NavbarLink to="/about">About</NavbarLink>
+                        <NavbarLink to="/social">Social</NavbarLink>
                         <OpenLinksButton onClick={() => {
                             setExtendNavbar((curr) => !curr);
                         }}>
